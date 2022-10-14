@@ -9,3 +9,5 @@ echo $IP
 echo $hostname
 
 sudo hostname $hostname
+sudo echo $hostname > /etc/hostname
+sudo echo $hostname > /etc/hosts
