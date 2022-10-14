@@ -4,9 +4,9 @@ declare IP="10.10.10.110"
 declare hostname="SRV-LIN1-02"
 declare gateway="10.10.10.2"
 declare interface="source /etc/network/interfaces.d/*
-
+SCRIPTED
 # The loopback network interface
-auto lo/n
+auto lo
 iface lo inet loopback
 
 allow-hotplug ens34
@@ -24,4 +24,4 @@ sudo hostname $hostname
 sudo echo $hostname > /etc/hostname
 sudo echo $hostname > /etc/hosts
 
-sudo printf $interface > /etc/network/interfaces
+sudo echo $interface > /etc/network/interfaces
