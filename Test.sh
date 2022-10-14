@@ -5,5 +5,5 @@ $hostname=SRV-LIN1-02
 
 
 echo "Starting Script . . ."
-echo $IP
-echo $hostname
+echo "$IP"
+echo "$hostname"
