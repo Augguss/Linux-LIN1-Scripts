@@ -3,5 +3,5 @@ hostname="SRV-LIN1-02"
 
 
 echo Starting Script . . .
-echo The IP will be : $IP
-echo The Hostname will be : $hostname
+echo "The IP will be : " $IP
+echo "The Hostname will be : "$hostname
