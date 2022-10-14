@@ -14,8 +14,8 @@ sudo echo $hostname > /etc/hosts
 
 sudo bash -c 'cat > /etc/network/interfaces << EOF 
 source /etc/network/interfaces.d/*
-SCRIPTED
-# The loopback network interface
+
+# The loopback network interface is SCRIPTED
 auto lo
 iface lo inet loopback
 
