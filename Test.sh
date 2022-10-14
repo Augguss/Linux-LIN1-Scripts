@@ -1,5 +1,3 @@
-#!/bin/bash
-
 declare IP="10.10.10.55"
 declare hostname="SRV-LIN1-02"
 
