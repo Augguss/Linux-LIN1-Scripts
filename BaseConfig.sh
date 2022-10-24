@@ -1,9 +1,11 @@
 #!/bin/bash
 #Config LIN1-SRV-02
 
-declare IP="10.10.10.22"
+declare IP="10.10.10.23"
 declare hostname="SRV-LIN1-02"
 declare gateway="10.10.10.2"
+declare mask="255.255.255.0"
+declare domain="lin1.local"
 
 echo Starting Script . . .
 echo $IP
@@ -25,16 +27,16 @@ cat <<EOM >$net_FILE
 
 source /etc/network/interfaces.d/*
 
-# The loopback network interface is scripted !
+# The loopback network interface is scripted with variables !
 auto lo
 iface lo inet loopback
 
 # The primary network interface
 auto ens33
 iface ens33 inet static
-address 10.10.10.22
-netmask 255.255.255.0
-gateway 10.10.10.2
+address $IP
+netmask $mask
+gateway $Gateway
 
 EOM
 
@@ -43,8 +45,8 @@ name_FILE="/etc/resolv.conf"
 cat <<EOM >$name_FILE
 #Scripted
 
-domain lin1.local
-search lin1.local
+domain $domain
+search $domain
 nameserver 10.10.10.11
 nameserver 10.10.10.2
 
