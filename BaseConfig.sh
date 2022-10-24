@@ -1,7 +1,7 @@
 #!/bin/bash
 #Config LIN1-SRV-02
 
-declare IP="10.10.10.23"
+declare IP="10.10.10.22"
 declare hostname="SRV-LIN1-02"
 declare gateway="10.10.10.2"
 declare mask="255.255.255.0"
@@ -10,6 +10,9 @@ declare domain="lin1.local"
 echo Starting Script . . .
 echo $IP
 echo $hostname
+echo $gateway
+echo $mask
+echo $domain
 
 #hostname config 
 
@@ -51,7 +54,5 @@ nameserver 10.10.10.11
 nameserver 10.10.10.2
 
 EOM
-
-
 
 sudo echo All good !
