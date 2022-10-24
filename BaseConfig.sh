@@ -39,7 +39,7 @@ auto ens32
 iface ens32 inet static
 address $IP
 netmask $mask
-gateway $Gateway
+gateway $gateway
 
 EOM
 
