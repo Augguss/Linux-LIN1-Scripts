@@ -35,8 +35,8 @@ auto lo
 iface lo inet loopback
 
 # The primary network interface
-auto ens33
-iface ens33 inet static
+auto ens32
+iface ens32 inet static
 address $IP
 netmask $mask
 gateway $Gateway
