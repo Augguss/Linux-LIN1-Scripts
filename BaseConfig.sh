@@ -30,11 +30,11 @@ cat <<EOM >$net_FILE
 
 source /etc/network/interfaces.d/*
 
-# The loopback network interface is scripted with variables !
+# The loopback network interface
 auto lo
 iface lo inet loopback
 
-# The primary network interface
+# The primary network interface is scripted with variables !
 auto ens32
 iface ens32 inet static
 address $IP
