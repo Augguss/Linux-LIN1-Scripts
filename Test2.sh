@@ -25,8 +25,8 @@ auto lo
 iface lo inet loopback
 
 # The primary network interface
-auto ens33
-iface ens33 inet static
+auto ens32
+iface ens32 inet static
 address 10.10.10.11
 netmask 255.255.255.0
 gateway 10.10.10.2
