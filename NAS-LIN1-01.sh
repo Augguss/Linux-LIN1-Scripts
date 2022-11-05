@@ -35,8 +35,8 @@ auto lo
 iface lo inet loopback
 
 # The primary network interface is scripted with variables !
-auto ens32
-iface ens32 inet static
+auto ens33
+iface ens33 inet static
 address $IP
 netmask $mask
 gateway $gateway
