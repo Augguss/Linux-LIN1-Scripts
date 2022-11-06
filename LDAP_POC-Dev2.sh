@@ -6,7 +6,7 @@ sudo touch /etc/ldap/content/newuser.ldif
 sudo touch /etc/ldap/content/addtogroup.ldif
 
 ##########################################################
-LDAP_FILE="/etc/ldap/content/users.ldif"
+LDAP_FILE="/etc/ldap/content/newuser.ldif"
 cat <<EOM >$LDAP_FILE
 
 dn: uid=dev2,ou=users,dc=lin1,dc=local
