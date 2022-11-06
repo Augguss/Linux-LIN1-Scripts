@@ -2,8 +2,8 @@
 
 #!/bin/bash
 
-sudo touch /etc/ldap/content/newuser.dif
-sudo touch /etc/ldap/content/addtogroup.dif
+sudo touch /etc/ldap/content/newuser.ldif
+sudo touch /etc/ldap/content/addtogroup.ldif
 
 ##########################################################
 LDAP_FILE="/etc/ldap/content/users.ldif"
